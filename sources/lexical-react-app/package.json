@@ -1,0 +1,45 @@
+{
+  "name": "lexical-react-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "bunx --bun vite",
+    "build": "bunx --bun vite build"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@carbon/colors": "^11.29.0",
+    "@carbon/icons": "^11.54.0",
+    "@carbon/icons-react": "^11.54.0",
+    "@carbon/themes": "^11.46.0",
+    "@lexical/clipboard": "^0.23.1",
+    "@lexical/list": "^0.23.1",
+    "@lexical/react": "^0.23.1",
+    "@lexical/rich-text": "^0.23.1",
+    "@lexical/selection": "^0.23.1",
+    "@lexical/utils": "^0.23.1",
+    "@ngneat/falso": "^7.3.0",
+    "@tailwindcss/vite": "^4.0.3",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "@vitejs/plugin-react-swc": "^3.7.2",
+    "clsx": "^2.1.1",
+    "globals": "^15.14.0",
+    "immer": "^10.1.1",
+    "lexical": "^0.23.1",
+    "lucide-react": "^0.474.0",
+    "react-aria": "^3.37.0",
+    "react-aria-components": "^1.6.0",
+    "react-error-boundary": "^5.0.0",
+    "react-router-dom": "^7.1.5",
+    "react-stately": "^3.35.0",
+    "tailwindcss": "^4.0.3",
+    "typescript": "^5.7.3",
+    "vite": "^6.0.11",
+    "zod": "^3.24.1"
+  }
+}
