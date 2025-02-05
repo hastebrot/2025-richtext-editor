@@ -1,6 +1,8 @@
 import { createHashRouter } from "react-router-dom";
+import { IndexPage } from "./pages/IndexPage";
+import { PlaintextDemo } from "./pages/PlaintextDemo";
 
 export const router = createHashRouter([
-  /* wrap */
-  { path: "/", element: <div>app</div> },
+  { path: "/", element: <IndexPage /> },
+  { path: "/demos/plaintext", element: <PlaintextDemo /> },
 ]);
