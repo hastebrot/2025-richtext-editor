@@ -1,6 +1,6 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react-swc";
 import tailwindcss from "@tailwindcss/vite";
+import react from "@vitejs/plugin-react-oxc";
+import { defineConfig } from "vite";
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
@@ -9,9 +9,11 @@ export default defineConfig({
     minify: true,
     rollupOptions: {
       output: {
-        manualChunks: {
-          react: ["react", "react-dom"],
-          "react-router": ["react-router", "react-router-dom"],
+        advancedChunks: {
+          groups: [
+            { name: "react-router", test: "react-router" },
+            { name: "react", test: "react|react-dom" },
+          ],
         },
       },
     },
